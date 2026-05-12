@@ -414,50 +414,120 @@ section {
 /* ── SKILLS ── */
 #skills { background: transparent; }
 
-.skills-wrap {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 48px 64px;
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.skill-group-title {
+.skill-category-label {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 3px;
   color: var(--accent);
   text-transform: uppercase;
-  margin-bottom: 28px;
-  padding-bottom: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(0,212,255,0.15);
+  opacity: 0.9;
 }
 
-.skill-row { margin-bottom: 22px; }
-.skill-row:last-child { margin-bottom: 0; }
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
 
-.skill-meta {
+.icon-item {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 9px;
+  gap: 12px;
+  padding: 22px 12px 18px;
+  background: var(--bg-2);
+  border: 1px solid rgba(0,212,255,0.1);
+  border-radius: 16px;
+  cursor: default;
+  transition: all 0.3s ease;
 }
 
-.skill-name { font-size: 13.5px; font-weight: 500; color: var(--text); }
-.skill-pct { font-size: 12px; font-weight: 700; color: var(--accent); }
-
-.bar-track {
-  height: 5px;
-  background: rgba(255,255,255,0.05);
-  border-radius: 3px;
-  overflow: hidden;
+.icon-item:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 22px var(--accent-glow-soft), 0 8px 28px rgba(0,0,0,0.3);
+  transform: translateY(-5px);
 }
 
-.bar-fill {
-  height: 100%;
-  width: 0;
-  border-radius: 3px;
-  background: linear-gradient(90deg, #0088ff, var(--accent));
-  box-shadow: 0 0 10px var(--accent-glow);
-  transition: width 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+/* Devicon <i> elements */
+.icon-item i {
+  font-size: 52px;
+  line-height: 1;
+  transition: filter 0.3s ease;
+}
+
+.icon-item:hover i {
+  filter: drop-shadow(0 0 8px var(--accent-glow));
+}
+
+/* Local SVG <img> elements */
+.icon-svg {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.icon-item:hover .icon-svg {
+  filter: drop-shadow(0 0 8px var(--accent-glow));
+}
+
+/* Light pill: wraps dark-content SVGs (aws.svg, postgresql.svg) so
+   they read clearly against the dark card background */
+.icon-svg-light {
+  background: rgba(255,255,255,0.92);
+  border-radius: 10px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+/* Kafka devicon renders black when colored — force it white */
+.icon-kafka {
+  font-size: 52px;
+  line-height: 1;
+  color: rgba(255,255,255,0.82) !important;
+  transition: filter 0.3s ease, color 0.3s ease;
+}
+
+.icon-item:hover .icon-kafka {
+  color: #fff !important;
+  filter: drop-shadow(0 0 8px var(--accent-glow));
+}
+
+.icon-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  letter-spacing: 0.2px;
+  transition: color 0.3s;
+}
+
+.icon-item:hover .icon-label { color: var(--text); }
+
+/* Text badges for icons with no SVG/devicon (gRPC, REST, ARCH, AI) */
+.icon-custom {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  line-height: 52px;
+  background: linear-gradient(135deg, #00bcd4, #0288d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: filter 0.3s ease;
+}
+
+.icon-item:hover .icon-custom {
+  filter: drop-shadow(0 0 6px var(--accent-glow));
 }
 
 /* ── PROJECTS ── */
@@ -868,7 +938,7 @@ footer span { color: var(--accent); }
   .hero-btns { flex-direction: column; align-items: flex-start; }
 
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .skills-wrap { grid-template-columns: 1fr; gap: 36px; }
+  .icon-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
 }
 

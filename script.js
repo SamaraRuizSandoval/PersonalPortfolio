@@ -44,20 +44,6 @@ const revealObs = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => revealObs.observe(el));
 
-/* ── SKILL BARS ── */
-const bars = document.querySelectorAll('.bar-fill');
-const barObs = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const bar = entry.target;
-      bar.style.width = bar.dataset.w;
-      barObs.unobserve(bar);
-    }
-  });
-}, { threshold: 0.3 });
-
-bars.forEach(b => barObs.observe(b));
-
 /* ── ACTIVE NAV ── */
 const sections = document.querySelectorAll('section[id]');
 const navBtns  = document.querySelectorAll('.nav-btn[data-section]');
