@@ -592,6 +592,49 @@ section {
   background-size: 30px 30px;
 }
 
+/* Real screenshot thumbnail */
+.project-screenshot {
+  height: 170px;
+  overflow: hidden;
+}
+
+.project-screenshot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-screenshot-img {
+  transform: scale(1.04);
+}
+
+/* "View Live" link button */
+.project-live-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 18px;
+  padding: 9px 18px;
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.project-live-btn:hover {
+  background: var(--accent-dim);
+  box-shadow: 0 0 18px var(--accent-glow-soft);
+  transform: translateY(-2px);
+}
+
 .project-body { padding: 22px 24px 26px; }
 
 .project-year {
