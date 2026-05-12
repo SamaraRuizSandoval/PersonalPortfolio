@@ -839,6 +839,29 @@ section {
   border-radius: 20px;
 }
 
+.credential-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 7px 14px;
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.credential-btn:hover {
+  background: var(--accent-dim);
+  box-shadow: 0 0 16px var(--accent-glow-soft);
+  transform: translateY(-2px);
+}
+
 /* ── CONTACT ── */
 #contact { min-height: auto; padding-bottom: 100px; }
 
