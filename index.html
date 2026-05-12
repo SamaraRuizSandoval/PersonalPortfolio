@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samara Ruiz Sandoval — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════ SIDEBAR ═══════════════════════ -->
+<nav class="sidebar" role="navigation" aria-label="Site navigation">
+  <div class="sidebar-logo">S</div>
+
+  <a href="#hero" class="nav-btn active" data-section="hero" aria-label="Home">
+    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <span class="tip">Home</span>
+  </a>
+
+  <a href="#about" class="nav-btn" data-section="about" aria-label="About">
+    <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span class="tip">About</span>
+  </a>
+
+  <a href="#skills" class="nav-btn" data-section="skills" aria-label="Skills">
+    <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+    <span class="tip">Skills</span>
+  </a>
+
+  <a href="#projects" class="nav-btn" data-section="projects" aria-label="Projects">
+    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+    <span class="tip">Projects</span>
+  </a>
+
+  <a href="#experience" class="nav-btn" data-section="experience" aria-label="Experience">
+    <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+    <span class="tip">Experience</span>
+  </a>
+
+  <a href="#education" class="nav-btn" data-section="education" aria-label="Education">
+    <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+    <span class="tip">Education</span>
+  </a>
+
+  <a href="#contact" class="nav-btn" data-section="contact" aria-label="Contact">
+    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    <span class="tip">Contact</span>
+  </a>
+</nav>
+
+<main>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section id="hero">
+  <div class="hero-inner">
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        Open to Work · Remote &amp; Miami, FL
+      </div>
+
+      <h1 class="hero-name">Samara Ruiz<br>Sandoval</h1>
+
+      <div class="hero-typing-wrap">
+        <span id="typing-text"></span><span class="cursor"></span>
+      </div>
+
+      <p class="hero-tagline">
+        Go · AWS · Azure · React — Reliable systems, DevOps practices &amp; AI-powered products.<br>
+        Passionate about clean architecture and tools that actually work at scale.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          View My Work
+        </a>
+        <a href="mailto:rsandoval.samara@gmail.com?subject=CV Request" class="btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-photo-col">
+      <div class="photo-ring">
+        <div class="photo-ring-outer"></div>
+        <div class="photo-circle">
+          <img src="./assets/images/profile.jpeg" alt="Samara Ruiz Sandoval" class="photo-img" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+<section id="about">
+  <div class="section-eyebrow reveal">About Me</div>
+  <h2 class="section-title reveal">Who I <span class="accent">Am</span></h2>
+
+  <div class="about-grid">
+    <div class="about-bio reveal">
+      <p>
+        Miami-based backend engineer with a <strong>CS degree from FIU (3.7 GPA)</strong> and hands-on experience building production <strong>Go APIs</strong>, integrating Apple MDM systems, and working with <strong>Kafka/MSK on AWS</strong>.
+      </p>
+      <p>
+        I transitioned from support engineering into software development, which gave me an unusually strong instinct for how systems break in the real world. I care about <strong>clean architecture</strong>, maintainable code, and tools that actually work at scale.
+      </p>
+      <p>
+        Whether it's designing an API contract, wiring up a cloud-native service, or shipping a full-stack feature under pressure — I focus on outcomes that matter.
+      </p>
+    </div>
+
+    <div class="about-right reveal">
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-num">3.7</span>
+          <span class="stat-lbl">GPA at FIU</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">4+</span>
+          <span class="stat-lbl">Years at Addigy</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">3rd</span>
+          <span class="stat-lbl">Hackathon Place</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">AWS</span>
+          <span class="stat-lbl">Cloud Certified</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+<section id="skills">
+  <div class="section-eyebrow reveal">What I Know</div>
+  <h2 class="section-title reveal">Technical <span class="accent">Skills</span></h2>
+
+  <div class="skills-wrap">
+
+    <!-- Languages & Frameworks -->
+    <div class="reveal">
+      <div class="skill-group-title">Languages &amp; Frameworks</div>
+
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Go</span><span class="skill-pct">90%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="90%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Bash</span><span class="skill-pct">80%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="80%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">TypeScript</span><span class="skill-pct">72%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="72%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">React</span><span class="skill-pct">70%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="70%"></div></div>
+      </div>
+    </div>
+
+    <!-- Cloud & Infrastructure -->
+    <div class="reveal">
+      <div class="skill-group-title">Cloud &amp; Infrastructure</div>
+
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Docker</span><span class="skill-pct">82%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="82%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">AWS (MSK / Kafka)</span><span class="skill-pct">78%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="78%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Microsoft Azure</span><span class="skill-pct">72%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="72%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Kubernetes</span><span class="skill-pct">62%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="62%"></div></div>
+      </div>
+    </div>
+
+    <!-- Data & APIs -->
+    <div class="reveal">
+      <div class="skill-group-title">Data &amp; APIs</div>
+
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">REST APIs</span><span class="skill-pct">90%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="90%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">PostgreSQL</span><span class="skill-pct">78%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="78%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">gRPC</span><span class="skill-pct">65%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="65%"></div></div>
+      </div>
+    </div>
+
+    <!-- Practices -->
+    <div class="reveal">
+      <div class="skill-group-title">Practices</div>
+
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Clean Architecture</span><span class="skill-pct">84%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="84%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">Git</span><span class="skill-pct">88%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="88%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">AI-assisted Development</span><span class="skill-pct">82%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="82%"></div></div>
+      </div>
+      <div class="skill-row">
+        <div class="skill-meta"><span class="skill-name">TDD</span><span class="skill-pct">72%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-w="72%"></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+<section id="projects">
+  <div class="section-eyebrow reveal">What I've Built</div>
+  <h2 class="section-title reveal">Featured <span class="accent">Projects</span></h2>
+
+  <div class="projects-grid">
+
+    <!-- BookClub App -->
+    <div class="project-card reveal">
+      <div class="project-thumb project-thumb-1">
+        <div class="project-thumb-grid"></div>
+        <div class="project-thumb-icon">📚</div>
+      </div>
+      <div class="project-body">
+        <div class="project-year">2025 – Present</div>
+        <div class="project-name">BookClub App</div>
+        <p class="project-desc">Full-stack web app for managing, sharing, and discussing books with per-chapter note-taking. Built with a clean architecture Go backend and a modern React frontend.</p>
+        <div class="tag-list">
+          <span class="tag">Go</span>
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Azure</span>
+          <span class="tag">JWT</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AutofinancieraApp -->
+    <div class="project-card reveal">
+      <div class="project-thumb project-thumb-2">
+        <div class="project-thumb-grid"></div>
+        <div class="project-thumb-icon">🚗</div>
+      </div>
+      <div class="project-body">
+        <div class="project-year">2025</div>
+        <div class="project-name">AutofinancieraApp</div>
+        <p class="project-desc">Client portal for an auto financing company with secure PDF document delivery via access-controlled API routes and JWT-authenticated sessions.</p>
+        <div class="tag-list">
+          <span class="tag">Go</span>
+          <span class="tag">React</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Docker</span>
+          <span class="tag">JWT</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AWS Bedrock Tool -->
+    <div class="project-card reveal">
+      <div class="project-thumb project-thumb-3">
+        <div class="project-thumb-grid"></div>
+        <div class="project-thumb-icon">🤖</div>
+      </div>
+      <div class="project-body">
+        <div class="project-year">Hackathon</div>
+        <div class="project-name">AWS Bedrock Log Analysis</div>
+        <p class="project-desc">AI-powered log analysis feature built with AWS Bedrock. Shipped fast under pressure using cloud-native AI services — earned 3rd place in a competitive hackathon.</p>
+        <div class="tag-list">
+          <span class="tag">Go</span>
+          <span class="tag">AWS Bedrock</span>
+          <span class="tag">AWS</span>
+          <span class="tag tag-badge">🏆 3rd Place</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+<section id="experience">
+  <div class="section-eyebrow reveal">Where I've Worked</div>
+  <h2 class="section-title reveal">Work <span class="accent">Experience</span></h2>
+
+  <div class="timeline">
+
+    <div class="t-item reveal">
+      <div class="t-dot"></div>
+      <div class="t-card">
+        <div class="t-header">
+          <div class="t-role">Jr. Software Engineer</div>
+          <div class="t-period">Sep 2023 – Jul 2025</div>
+        </div>
+        <div class="t-company">Addigy · Miami, FL</div>
+        <div class="t-desc">
+          Designed and shipped REST API endpoints in Go powering core product features. Integrated Apple MDM commands into backend systems enabling remote management of thousands of devices. Assisted in Kafka/MSK cluster upgrades on AWS with rigorous regression testing to ensure zero-downtime migrations.
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item reveal">
+      <div class="t-dot"></div>
+      <div class="t-card">
+        <div class="t-header">
+          <div class="t-role">Support Engineer (Tier 1 → Tier 2)</div>
+          <div class="t-period">May 2021 – Sep 2023</div>
+        </div>
+        <div class="t-company">Addigy · Miami, FL</div>
+        <div class="t-desc">
+          Progressed to subject matter expert supporting internal teams and enterprise customers. Wrote Bash automation scripts that reduced manual operational overhead, led intern onboarding programs, and performed deep bug reproduction and reporting that directly fed into engineering backlogs. This role built the real-world systems intuition I carry into software development today.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ EDUCATION ═══════════════════════ -->
+<section id="education">
+  <div class="section-eyebrow reveal">Background</div>
+  <h2 class="section-title reveal">Education &amp; <span class="accent">Certifications</span></h2>
+
+  <div class="edu-grid">
+
+    <div class="edu-card reveal">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <div class="edu-title">B.S. Computer Science</div>
+        <div class="edu-org">Florida International University</div>
+        <div class="edu-meta">
+          Miami, FL · Graduated Apr 2021
+          <span class="gpa">GPA 3.7 / 4.0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-card reveal">
+      <div class="edu-icon">☁️</div>
+      <div>
+        <div class="edu-title">AWS Certified Cloud Practitioner</div>
+        <div class="edu-org">Amazon Web Services</div>
+        <div class="edu-meta">
+          Issued Aug 2024 · Valid through Aug 2027
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+<section id="contact">
+  <div class="section-eyebrow reveal">Get in Touch</div>
+  <h2 class="section-title reveal">Let's <span class="accent">Connect</span></h2>
+
+  <div class="contact-grid">
+    <div class="reveal">
+      <div class="available-chip">
+        <div class="chip-dot"></div>
+        Available for new opportunities
+      </div>
+      <p class="contact-intro">
+        I'm currently open to backend, cloud, or full-stack roles — remote or Miami-based. Whether it's a new product, a hard engineering problem, or a team that cares about quality, I'd love to hear from you.
+      </p>
+    </div>
+
+    <div class="contact-links reveal">
+      <a href="mailto:rsandoval.samara@gmail.com" class="contact-link">
+        <div class="c-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="c-lbl">Email</div>
+          <div class="c-val">rsandoval.samara@gmail.com</div>
+        </div>
+      </a>
+
+      <a href="https://linkedin.com/in/samara-ruizsandoval" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <div class="c-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <div>
+          <div class="c-lbl">LinkedIn</div>
+          <div class="c-val">linkedin.com/in/samara-ruizsandoval</div>
+        </div>
+      </a>
+
+      <div class="contact-link" style="cursor:default;">
+        <div class="c-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <div class="c-lbl">Location</div>
+          <div class="c-val">Miami, FL · Open to Remote</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Designed &amp; built by <span>Samara Ruiz Sandoval</span> · 2025</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
